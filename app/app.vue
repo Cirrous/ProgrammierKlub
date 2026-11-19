@@ -1,8 +1,8 @@
-<template>
-  <div>
-    <h1>Hello World!</h1>
-    <h2>Start Deployment</h2>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+<template lang="pug">
+    Header
+    h1 Hello World!
+    h2 Start Deployment
+    NuxtLayout
+      NuxtPage
+
 </template>

@@ -11,4 +11,6 @@ export default defineNuxtConfig({
   nitro: {
     preset: "github_pages",
   },
+
+  css: ["@/assets/styles/_main.css"],
 });
