@@ -1,0 +1,129 @@
+/*
+ * Programmierclub brand theme, built on the neobrutalism.com token system:
+ * hard-edged (blur-free) shadows colored by --border, thick borders, and two
+ * font slots (--font-head for headings/UI, --font-sans for body text).
+ * Palette: DE5A70 (pink cap), FFCEBB (light peach), 85433A (fur brown),
+ * 350800 (ink outline), 969696 (gray).
+ */
+:root {
+  --background: #fff8f4;
+  --foreground: #350800;
+
+  --card: #ffffff;
+  --card-foreground: #350800;
+  --popover: #ffffff;
+  --popover-foreground: #350800;
+
+  --primary: #de5a70;
+  --primary-hover: #c8425a;
+  --primary-foreground: #ffffff;
+
+  --secondary: #85433a;
+  --secondary-hover: #6e372f;
+  --secondary-foreground: #fff8f4;
+
+  --muted: #ffe9df;
+  --muted-foreground: #85433a;
+
+  --accent: #ffcebb;
+  --accent-foreground: #350800;
+
+  --destructive: #c0392b;
+  --destructive-foreground: #ffffff;
+
+  --border: #350800;
+  --input: #ffffff;
+  --ring: #de5a70;
+
+  --overlay: rgb(53 8 0 / 0.5);
+}
+
+.dark {
+  --background: #241006;
+  --foreground: #ffefe7;
+
+  --card: #33150a;
+  --card-foreground: #ffefe7;
+  --popover: #33150a;
+  --popover-foreground: #ffefe7;
+
+  --primary: #de5a70;
+  --primary-hover: #ed7690;
+  --primary-foreground: #240a06;
+
+  --secondary: #ffcebb;
+  --secondary-hover: #ffb89e;
+  --secondary-foreground: #350800;
+
+  --muted: #3a2015;
+  --muted-foreground: #d9b6a5;
+
+  --accent: #4a2417;
+  --accent-foreground: #ffcebb;
+
+  --destructive: #ff6b6b;
+  --destructive-foreground: #240a06;
+
+  --border: #ffcebb;
+  --input: #33150a;
+  --ring: #de5a70;
+
+  --overlay: rgb(0 0 0 / 0.6);
+}
+
+:root,
+.dark {
+  /* Aliase, die in den Komponenten verwendet werden.
+     Auch auf .dark deklariert, damit sie dort neu aufgelöst werden. */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary-hover: var(--secondary-hover);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-overlay: var(--overlay);
+
+  --font-jetbrains-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-head: var(--font-jetbrains-mono);
+  --font-sans: var(--font-jetbrains-mono);
+  --font-mono: var(--font-jetbrains-mono);
+
+  --radius: 0.5rem;
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+
+  --shadow-xs: 1px 1px 0 0 var(--border);
+  --shadow-sm: 2px 2px 0 0 var(--border);
+  --shadow: 3px 3px 0 0 var(--border);
+  --shadow-md: 4px 4px 0 0 var(--border);
+  --shadow-lg: 6px 6px 0 0 var(--border);
+  --shadow-xl: 10px 10px 0 1px var(--border);
+  --shadow-2xl: 16px 16px 0 1px var(--border);
+
+  --container-width: 72rem;
+  --header-height: 4.5rem;
+
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+
+  /* Breakpoints (nur zur Doku – in Media Queries nicht nutzbar):
+     sm: 640px, md: 768px */
+}

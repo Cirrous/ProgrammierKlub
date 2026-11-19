@@ -6,6 +6,23 @@ export default defineNuxtConfig({
 
   app: {
     baseURL: "/",
+    head: {
+      title: "ProgrammierKlub",
+      htmlAttrs: { lang: "de" },
+      link: [
+        { rel: "icon", type: "image/png", href: "/Favicon.png" },
+        { rel: "preconnect", href: "https://fonts.googleapis.com" },
+        {
+          rel: "preconnect",
+          href: "https://fonts.gstatic.com",
+          crossorigin: "",
+        },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap",
+        },
+      ],
+    },
   },
 
   nitro: {
