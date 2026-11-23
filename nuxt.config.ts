@@ -1,16 +1,19 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+const baseURL = process.env.BASE_URL || "/";
+
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   ssr: false,
 
   app: {
-    baseURL: "/",
+    baseURL,
     head: {
       title: "ProgrammierKlub",
       htmlAttrs: { lang: "de" },
       link: [
-        { rel: "icon", type: "image/png", href: "/Favicon.png" },
+        { rel: "icon", type: "image/png", href: `${baseURL}Favicon.png` },
         { rel: "preconnect", href: "https://fonts.googleapis.com" },
         {
           rel: "preconnect",
